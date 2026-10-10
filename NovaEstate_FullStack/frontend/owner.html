@@ -1,0 +1,1349 @@
+```html
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>NovaEstate — Founder</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+         ===================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         MAIN NOVAESTATE CSS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+
+    <!-- =====================================================
+         OWNER PAGE STYLES
+         ===================================================== -->
+
+    <style>
+
+        /* =================================================
+           PAGE
+           ================================================= */
+
+        .owner-page {
+
+            padding: 30px;
+
+            max-width: 1400px;
+
+            margin: auto;
+
+        }
+
+
+        /* =================================================
+           HERO
+           ================================================= */
+
+        .owner-hero {
+
+            position: relative;
+
+            overflow: hidden;
+
+            min-height: 440px;
+
+            padding: 55px;
+
+            display: grid;
+
+            grid-template-columns:
+                1.5fr
+                0.8fr;
+
+            align-items: center;
+
+            gap: 40px;
+
+            border-radius: 30px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.09);
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 15%,
+                    rgba(118,95,255,0.28),
+                    transparent 35%
+                ),
+
+                radial-gradient(
+                    circle at 20% 100%,
+                    rgba(40,210,255,0.10),
+                    transparent 35%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #11172b,
+                    #080c18
+                );
+
+            box-shadow:
+                0 30px 90px
+                rgba(0,0,0,0.30);
+
+        }
+
+
+        .owner-hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 320px;
+
+            height: 320px;
+
+            right: -120px;
+
+            top: -120px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(105,85,255,0.15);
+
+            filter: blur(20px);
+
+        }
+
+
+        .owner-copy {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        /* =================================================
+           EYEBROW
+           ================================================= */
+
+        .owner-eyebrow {
+
+            display: inline-block;
+
+            margin-bottom: 20px;
+
+            color:
+                rgba(255,255,255,0.52);
+
+            font-size: 12px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        /* =================================================
+           MAIN HEADING
+           ================================================= */
+
+        .owner-copy h1 {
+
+            margin: 0 0 20px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size:
+                clamp(45px, 6vw, 78px);
+
+            line-height: 0.98;
+
+            letter-spacing: -3px;
+
+        }
+
+
+        .owner-copy h1 span {
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #8e7dff,
+                    #55dfff
+                );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color:
+                transparent;
+
+        }
+
+
+        /* =================================================
+           ROLE
+           ================================================= */
+
+        .owner-role {
+
+            margin-bottom: 20px;
+
+            font-size: 19px;
+
+            font-weight: 700;
+
+            color:
+                rgba(255,255,255,0.88);
+
+        }
+
+
+        .owner-description {
+
+            max-width: 680px;
+
+            margin-bottom: 15px;
+
+            color:
+                rgba(255,255,255,0.60);
+
+            line-height: 1.8;
+
+            font-size: 15px;
+
+        }
+
+
+        .owner-description strong {
+
+            color:
+                rgba(255,255,255,0.90);
+
+        }
+
+
+        /* =================================================
+           PROFILE CARD
+           ================================================= */
+
+        .owner-profile {
+
+            position: relative;
+
+            z-index: 2;
+
+            display: flex;
+
+            justify-content: center;
+
+        }
+
+
+        .profile-card {
+
+            width: 285px;
+
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 25px;
+
+            background:
+                rgba(255,255,255,0.055);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.11);
+
+            backdrop-filter:
+                blur(20px);
+
+            box-shadow:
+                0 25px 70px
+                rgba(0,0,0,0.30);
+
+        }
+
+
+        /* =================================================
+           AVATAR
+           ================================================= */
+
+        .profile-avatar {
+
+            width: 130px;
+
+            height: 130px;
+
+            margin:
+                0 auto 22px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 50%;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 43px;
+
+            font-weight: 700;
+
+            color: white;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    #7667ff,
+                    #29d9ff
+                );
+
+            box-shadow:
+
+                0 0 0 8px
+                rgba(118,103,255,0.08),
+
+                0 0 50px
+                rgba(70,140,255,0.35);
+
+        }
+
+
+        .profile-card h2 {
+
+            margin:
+                0 0 8px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 23px;
+
+        }
+
+
+        .profile-card p {
+
+            margin: 0;
+
+            color:
+                rgba(255,255,255,0.55);
+
+            font-size: 14px;
+
+        }
+
+
+        .verified {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 6px;
+
+            margin-top: 16px;
+
+            padding:
+                7px 13px;
+
+            border-radius: 30px;
+
+            background:
+                rgba(65,220,165,0.10);
+
+            color:
+                #6ee7b7;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =================================================
+           SECTION
+           ================================================= */
+
+        .owner-section {
+
+            margin-top: 38px;
+
+        }
+
+
+        .section-title {
+
+            margin-bottom: 20px;
+
+        }
+
+
+        .section-title span {
+
+            color:
+                rgba(255,255,255,0.45);
+
+            font-size: 11px;
+
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .section-title h2 {
+
+            margin:
+                7px 0 0;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 30px;
+
+        }
+
+
+        /* =================================================
+           CARDS
+           ================================================= */
+
+        .owner-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 18px;
+
+        }
+
+
+        .owner-card {
+
+            padding: 28px;
+
+            min-height: 190px;
+
+            border-radius: 22px;
+
+            background:
+                rgba(255,255,255,0.045);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
+
+        }
+
+
+        .owner-card:hover {
+
+            transform:
+                translateY(-6px);
+
+            border-color:
+                rgba(126,110,255,0.38);
+
+            box-shadow:
+                0 20px 50px
+                rgba(0,0,0,0.22);
+
+        }
+
+
+        .owner-card-icon {
+
+            width: 50px;
+
+            height: 50px;
+
+            margin-bottom: 18px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            border-radius: 15px;
+
+            background:
+                rgba(117,103,255,0.12);
+
+            font-size: 23px;
+
+        }
+
+
+        .owner-card h3 {
+
+            margin:
+                0 0 10px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 19px;
+
+        }
+
+
+        .owner-card p {
+
+            margin: 0;
+
+            color:
+                rgba(255,255,255,0.56);
+
+            line-height: 1.7;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =================================================
+           TECHNOLOGY
+           ================================================= */
+
+        .technology {
+
+            margin-top: 38px;
+
+            padding: 32px;
+
+            border-radius: 24px;
+
+            background:
+
+                linear-gradient(
+                    135deg,
+                    rgba(118,103,255,0.10),
+                    rgba(35,210,255,0.035)
+                );
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+        }
+
+
+        .technology h2 {
+
+            margin:
+                7px 0 22px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+        }
+
+
+        .tech-list {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+        }
+
+
+        .tech-tag {
+
+            padding:
+                10px 15px;
+
+            border-radius: 30px;
+
+            background:
+                rgba(255,255,255,0.055);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+            color:
+                rgba(255,255,255,0.78);
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+        }
+
+
+        /* =================================================
+           VISION
+           ================================================= */
+
+        .vision {
+
+            position: relative;
+
+            overflow: hidden;
+
+            margin-top: 38px;
+
+            padding: 55px 30px;
+
+            text-align: center;
+
+            border-radius: 27px;
+
+            background:
+
+                radial-gradient(
+                    circle at center,
+                    rgba(104,86,255,0.18),
+                    transparent 58%
+                ),
+
+                rgba(255,255,255,0.035);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.08);
+
+        }
+
+
+        .vision h2 {
+
+            margin:
+                8px 0 15px;
+
+            font-family:
+                "Space Grotesk",
+                sans-serif;
+
+            font-size: 34px;
+
+        }
+
+
+        .vision h2 span {
+
+            color:
+                #8f7cff;
+
+        }
+
+
+        .vision p {
+
+            max-width: 760px;
+
+            margin:
+                auto;
+
+            color:
+                rgba(255,255,255,0.58);
+
+            line-height: 1.8;
+
+            font-size: 15px;
+
+        }
+
+
+        /* =================================================
+           CONTACT BUTTONS
+           ================================================= */
+
+        .owner-contact {
+
+            margin-top: 28px;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            justify-content: center;
+
+            gap: 12px;
+
+        }
+
+
+        .owner-contact a {
+
+            padding:
+                12px 20px;
+
+            border-radius: 12px;
+
+            text-decoration: none;
+
+            color: white;
+
+            background:
+                rgba(255,255,255,0.055);
+
+            border:
+                1px solid
+                rgba(255,255,255,0.09);
+
+            font-size: 14px;
+
+            font-weight: 600;
+
+            transition:
+                0.2s ease;
+
+        }
+
+
+        .owner-contact a:hover {
+
+            transform:
+                translateY(-3px);
+
+            background:
+                rgba(117,103,255,0.17);
+
+            border-color:
+                rgba(117,103,255,0.4);
+
+        }
+
+
+        /* =================================================
+           FOOTER
+           ================================================= */
+
+        .owner-footer {
+
+            padding:
+                45px 20px 25px;
+
+            text-align: center;
+
+            color:
+                rgba(255,255,255,0.38);
+
+            font-size: 13px;
+
+        }
+
+
+        .owner-footer strong {
+
+            color:
+                rgba(255,255,255,0.75);
+
+        }
+
+
+        /* =================================================
+           RESPONSIVE
+           ================================================= */
+
+        @media (max-width: 950px) {
+
+            .owner-hero {
+
+                grid-template-columns: 1fr;
+
+                padding: 40px;
+
+            }
+
+            .owner-profile {
+
+                justify-content: flex-start;
+
+            }
+
+            .owner-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .owner-page {
+
+                padding: 18px;
+
+            }
+
+            .owner-hero {
+
+                padding: 28px;
+
+                border-radius: 22px;
+
+            }
+
+            .owner-copy h1 {
+
+                font-size: 48px;
+
+                letter-spacing: -2px;
+
+            }
+
+            .profile-card {
+
+                width: 100%;
+
+            }
+
+            .vision {
+
+                padding:
+                    35px 20px;
+
+            }
+
+            .vision h2 {
+
+                font-size: 28px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         APPLICATION SHELL
+         ===================================================== -->
+
+    <div class="app-shell">
+
+
+        <!-- SIDEBAR
+             Automatically populated by app.js -->
+
+        <aside
+            class="sidebar"
+            id="sidebar"
+        ></aside>
+
+
+        <!-- =================================================
+             MAIN CONTENT
+             ================================================= -->
+
+        <main class="main-content">
+
+
+            <!-- TOPBAR
+                 Automatically populated by app.js -->
+
+            <header
+                class="topbar"
+                id="topbar"
+            ></header>
+
+
+            <!-- =================================================
+                 OWNER PAGE
+                 ================================================= -->
+
+            <div class="owner-page">
+
+
+                <!-- =================================================
+                     HERO
+                     ================================================= -->
+
+                <section class="owner-hero">
+
+
+                    <div class="owner-copy">
+
+
+                        <span class="owner-eyebrow">
+                            FOUNDER • OWNER • DEVELOPER
+                        </span>
+
+
+                        <h1>
+                            Meet
+                            <span>Vinod.</span>
+                        </h1>
+
+
+                        <div class="owner-role">
+                            Founder & Software Developer — NovaEstate
+                        </div>
+
+
+                        <p class="owner-description">
+
+                            Hi, I'm
+                            <strong>Vinod Mudavath</strong>,
+                            the founder and developer behind
+                            <strong>NovaEstate</strong>.
+
+                            I created NovaEstate with the goal of making
+                            property discovery simpler, smarter and more
+                            connected through modern technology.
+
+                        </p>
+
+
+                        <p class="owner-description">
+
+                            NovaEstate combines real-estate discovery,
+                            location intelligence and modern web
+                            technologies to create a clean and
+                            future-ready property experience.
+
+                        </p>
+
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PROFILE
+                         ================================================= -->
+
+                    <div class="owner-profile">
+
+
+                        <div class="profile-card">
+
+
+                            <div class="profile-avatar">
+                                VM
+                            </div>
+
+
+                            <h2>
+                                Vinod Mudavath
+                            </h2>
+
+
+                            <p>
+                                Founder & Full-Stack Developer
+                            </p>
+
+
+                            <div class="verified">
+                                ✓ Software Owner
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     ABOUT FOUNDER
+                     ================================================= -->
+
+                <section class="owner-section">
+
+
+                    <div class="section-title">
+
+                        <span>
+                            ABOUT THE FOUNDER
+                        </span>
+
+                        <h2>
+                            Building technology with purpose.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="owner-grid">
+
+
+                        <!-- VISION -->
+
+                        <article class="owner-card">
+
+
+                            <div class="owner-card-icon">
+                                💡
+                            </div>
+
+
+                            <h3>
+                                Vision
+                            </h3>
+
+
+                            <p>
+
+                                To create digital products that solve
+                                real-world problems through simple,
+                                modern and reliable technology.
+
+                            </p>
+
+
+                        </article>
+
+
+                        <!-- DEVELOPMENT -->
+
+                        <article class="owner-card">
+
+
+                            <div class="owner-card-icon">
+                                💻
+                            </div>
+
+
+                            <h3>
+                                Development
+                            </h3>
+
+
+                            <p>
+
+                                NovaEstate is designed and developed
+                                using a modern full-stack architecture
+                                connecting the frontend, backend and
+                                database.
+
+                            </p>
+
+
+                        </article>
+
+
+                        <!-- INNOVATION -->
+
+                        <article class="owner-card">
+
+
+                            <div class="owner-card-icon">
+                                🚀
+                            </div>
+
+
+                            <h3>
+                                Innovation
+                            </h3>
+
+
+                            <p>
+
+                                The platform focuses on smart property
+                                discovery, location intelligence and
+                                an attractive digital real-estate
+                                experience.
+
+                            </p>
+
+
+                        </article>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     TECHNOLOGY STACK
+                     ================================================= -->
+
+                <section class="technology">
+
+
+                    <span class="owner-eyebrow">
+                        TECHNOLOGY
+                    </span>
+
+
+                    <h2>
+                        Built with modern technologies
+                    </h2>
+
+
+                    <div class="tech-list">
+
+
+                        <span class="tech-tag">
+                            Java
+                        </span>
+
+
+                        <span class="tech-tag">
+                            Spring Boot
+                        </span>
+
+
+                        <span class="tech-tag">
+                            Spring Security
+                        </span>
+
+
+                        <span class="tech-tag">
+                            REST API
+                        </span>
+
+
+                        <span class="tech-tag">
+                            PostgreSQL
+                        </span>
+
+
+                        <span class="tech-tag">
+                            JPA / Hibernate
+                        </span>
+
+
+                        <span class="tech-tag">
+                            HTML5
+                        </span>
+
+
+                        <span class="tech-tag">
+                            CSS3
+                        </span>
+
+
+                        <span class="tech-tag">
+                            JavaScript
+                        </span>
+
+
+                        <span class="tech-tag">
+                            JWT Authentication
+                        </span>
+
+
+                        <span class="tech-tag">
+                            Leaflet Maps
+                        </span>
+
+
+                        <span class="tech-tag">
+                            Git & GitHub
+                        </span>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     NOVAESTATE VISION
+                     ================================================= -->
+
+                <section class="vision">
+
+
+                    <span class="owner-eyebrow">
+                        NOVAESTATE
+                    </span>
+
+
+                    <h2>
+
+                        A new way to experience
+                        <span>real estate.</span>
+
+                    </h2>
+
+
+                    <p>
+
+                        NovaEstate is more than a property listing
+                        platform. It is a technology-driven
+                        real-estate experience designed to connect
+                        people with properties, locations and
+                        opportunities through a clean and intelligent
+                        digital platform.
+
+                    </p>
+
+
+                    <!-- CONTACT / SOCIAL LINKS -->
+
+                    <div class="owner-contact">
+
+
+                        <a
+                            href="https://github.com/vinod-4284"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub ↗
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn ↗
+                        </a>
+
+
+                        <a
+                            href="https://vinod4207.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Portfolio ↗
+                        </a>
+
+
+                        <a
+                            href="mailto:mvinod4284@gmail.com"
+                        >
+                            Contact Founder ↗
+                        </a>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =================================================
+                     FOOTER
+                     ================================================= -->
+
+                <footer class="owner-footer">
+
+
+                    <p>
+
+                        <strong>
+                            NovaEstate
+                        </strong>
+
+                        — Founded & Developed by
+
+                        <strong>
+                            Vinod Mudavath
+                        </strong>
+
+                    </p>
+
+
+                    <p>
+                        © 2026 NovaEstate.
+                        All rights reserved.
+                    </p>
+
+
+                </footer>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         TOAST
+         ===================================================== -->
+
+    <div id="toast" class="toast"></div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="js/api.js"></script>
+
+    <script src="js/app.js"></script>
+
+
+    <!--
+        app.js automatically:
+
+        1. Loads the sidebar
+        2. Loads the topbar
+        3. Detects owner.html
+        4. Makes "Founder" active
+        5. Loads the current user
+    -->
+
+    <script> protect();
+    shell("Founder");
+    </script>
+
+
+</body>
+
+</html>

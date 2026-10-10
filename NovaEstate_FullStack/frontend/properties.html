@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaEstate — Properties</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+      <!-- Topbar -->
+      <header class="topbar" id="topbar"></header>
+
+      <!-- Page Heading -->
+      <section class="page-heading">
+        <div>
+          <span class="eyebrow">PROPERTY EXPLORER</span>
+          <h1>
+            Find your next <span>address.</span>
+          </h1>
+          <p>Search, filter and compare spaces that fit your lifestyle.</p>
+        </div>
+        <a href="add-property.html" class="btn btn-primary">＋ Add property</a>
+      </section>
+
+      <!-- Filter Panel -->
+      <section class="filter-panel">
+        <div class="search-box compact">
+          <span>⌕</span>
+          <input id="propertySearch" placeholder="Search by name, city or area...">
+        </div>
+
+        <select id="typeFilter">
+          <option value="">All types</option>
+          <option>Apartment</option>
+          <option>Villa</option>
+          <option>House</option>
+          <option>Commercial</option>
+        </select>
+
+        <select id="purposeFilter">
+          <option value="">Buy & Rent</option>
+          <option>For Sale</option>
+          <option>For Rent</option>
+        </select>
+
+        <select id="priceFilter">
+          <option value="">Any budget</option>
+          <option value="10000000">Under ₹1 Cr</option>
+          <option value="20000000">Under ₹2 Cr</option>
+          <option value="50000000">Under ₹5 Cr</option>
+        </select>
+      </section>
+
+      <!-- Results Bar -->
+      <div class="results-bar">
+        <span id="resultCount"></span>
+        <select id="sortFilter">
+          <option value="new">Newest first</option>
+          <option value="low">Price: Low to High</option>
+          <option value="high">Price: High to Low</option>
+        </select>
+      </div>
+
+      <!-- Properties Grid -->
+      <section class="property-grid" id="propertiesGrid"></section>
+    </main>
+  </div>
+
+  <!-- Toast Notifications -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Scripts -->
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/properties.js"></script>
+</body>
+</html>

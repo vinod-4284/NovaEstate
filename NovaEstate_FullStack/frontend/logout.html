@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NovaEstate — Logged out</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="logout-page">
+  <div class="logout-card">
+
+    <!-- Brand -->
+    <div class="brand">
+      <span class="brand-mark">N</span>
+      <span>NOVA<span>ESTATE</span></span>
+    </div>
+
+    <!-- Success Icon -->
+    <div class="success-icon">✓</div>
+
+    <!-- Heading -->
+    <span class="eyebrow">SESSION ENDED</span>
+    <h1>
+      See you <span>soon.</span>
+    </h1>
+    <p>You have been safely logged out of NovaEstate.</p>
+
+    <!-- Action -->
+    <a href="login.html" class="btn btn-primary btn-full">Return to login →</a>
+  </div>
+
+  <!-- Clear session -->
+  <script>
+    localStorage.removeItem("novaLoggedIn");
+  </script>
+</body>
+</html>
