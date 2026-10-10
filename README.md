@@ -28,7 +28,21 @@ You can log in using the demo credentials:
 
 ---
 
+<img width="960" height="540" alt="Screenshot 2026-10-10 193648" src="https://github.com/user-attachments/assets/06617465-6426-41c7-b6ba-981d090e8ca5" />
+
+---
+
+
+
 ## 📌 Setup Instructions
 1. Clone the repository:
    ```bash
    git clone https://github.com/YourUsername/NovaEstate.git
+
+
+---
+
+👨‍💻 Author
+Name: Vinod
+
+GitHub: vinod-4284
