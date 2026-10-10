@@ -18,7 +18,7 @@ python -m http.server 5500
 Open http://localhost:5500/login.html
 
 Demo account:
-vinod@novaestate.com / Mvinod@4284
+vinod@novaestate.com / MXXX@4XXX4
 demo@novaestate.com / 123456
 
 ## API
